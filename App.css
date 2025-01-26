@@ -1,0 +1,171 @@
+/* App.css */
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Main Container */
+.container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #3f51b5;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Add Stock Form */
+.add-stock-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.add-stock-form input,
+.add-stock-form button {
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.add-stock-form input:focus,
+.add-stock-form button:focus {
+  border-color: #3f51b5;
+  outline: none;
+}
+
+/* Add Stock Button */
+.add-stock-form button {
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-stock-form button:hover {
+  background-color: #303f9f;
+  transform: translateY(-2px);
+}
+
+/* Stocks List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+ul li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul li button {
+  padding: 8px 15px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+ul li button:hover {
+  background-color: #d32f2f;
+  transform: translateY(-2px);
+}
+
+/* Update Stock Form */
+.update-stock {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.update-stock input,
+.update-stock button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.update-stock input {
+  width: 60%;
+}
+
+.update-stock button {
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.update-stock button:hover {
+  background-color: #303f9f;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      width: 100%;
+      padding: 20px;
+  }
+
+  h1 {
+      font-size: 1.6rem;
+  }
+
+  .add-stock-form input,
+  .add-stock-form button {
+      font-size: 14px;
+  }
+
+  ul li {
+      font-size: 14px;
+  }
+}
